@@ -9,4 +9,11 @@
     <string name="txtResetPassword">Повторите пароль</string>
     <string name="txtRegistrartion">Зарегистрироваться</string>
     <string name="txtNoRegistration">У меня уже есть аккаунт</string>
+    <string name="Profile_Name">Воланд Иванов</string>
+    <string name="Profile_Email">ivan@example.com</string>
+    <string name="Profile_Edit">Изменить</string>
+    <string name="Profile_Exit">Вывод</string>
+    <string name="Profile_Discussion">Обсуждение</string>
+    <string name="Profile_Story">История</string>
+    <string name="Profile_Setting">Настройки</string>
 </resources>
