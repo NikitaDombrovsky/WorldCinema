@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#000000"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".AuthorizationScreen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true">
+            <ImageView
+                android:id="@+id/splashScreen"
+                android:layout_marginTop="40dp"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:src="@drawable/launch_screen_icon" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/border"
+                android:hint="@string/txtName"
+                android:textColorHint="@color/gray"
+                app:boxStrokeColor="@color/gray"
+                app:hintTextColor="@color/gray"
+                style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
+                android:ellipsize="end"
+                android:textAppearance="?textAppearanceBody1" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/border"
+                android:hint="@string/txtSurname"
+                android:textColorHint="@color/gray"
+                app:boxStrokeColor="@color/gray"
+                app:hintTextColor="@color/gray"
+                style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
+                android:ellipsize="end"
+                android:textAppearance="?textAppearanceBody1" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/border"
+                android:hint="@string/txtInputEmail"
+                android:textColorHint="@color/gray"
+                app:boxStrokeColor="@color/gray"
+                app:hintTextColor="@color/gray"
+                style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
+                android:ellipsize="end"
+                android:textAppearance="?textAppearanceBody1" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/border"
+                android:hint="@string/txtInputPassword"
+                android:textColorHint="@color/gray"
+                app:boxStrokeColor="@color/gray"
+                app:hintTextColor="@color/gray"
+                style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
+                android:ellipsize="end"
+                android:textAppearance="?textAppearanceBody1" />
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@drawable/border"
+                android:hint="@string/txtResetPassword"
+                android:textColorHint="@color/gray"
+                app:boxStrokeColor="@color/gray"
+                app:hintTextColor="@color/gray"
+                style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
+                android:ellipsize="end"
+                android:textAppearance="?textAppearanceBody1" />
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true">
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border_orange"
+                android:layout_marginTop="13dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:text="@string/txtRegistrartion"
+                android:textColor="@color/white"/>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#9C9090"
+                android:background="@drawable/border"
+                android:layout_marginTop="13dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:ellipsize="end"
+                android:textColorHighlight="#9C9090"
+                android:textAppearance="?textAppearanceBody1"
+                android:textColor="@color/orange"
+                app:boxStrokeColor="#9C9090"
+                android:text="@string/txtNoRegistration" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>
+
+    <!-- style="@style/Widget.MaterialComponents.Button.OutlinedButton" -->
