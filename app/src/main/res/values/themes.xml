@@ -13,4 +13,12 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+    <style name="TextInputLayoutStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">#9C9090</item>
+        <item name="boxStrokeWidth">2dp</item>
+    </style>
+    <style name="ButtonLayoutStyle" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="boxStrokeColor">#9C9090</item>
+        <item name="boxStrokeWidth">3dp</item>
+    </style>
 </resources>
