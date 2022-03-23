@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Главное"
+        android:icon="@drawable/main_vector_1_1"
+        android:id="@+id/fragment_first"
+        />
+    <item android:title="Подборка"
+        android:icon="@drawable/main_vector_2_1"
+        android:id="@+id/fragment_second"
+        />
+    <item android:title="Коллекции"
+        android:icon="@drawable/main_vector_3_1"
+        android:id="@+id/fragment_third"
+        />
+    <item android:title="Профиль"
+        android:icon="@drawable/main_vector_4_1"
+        android:id="@+id/fragment_firth"
+        />
+</menu>

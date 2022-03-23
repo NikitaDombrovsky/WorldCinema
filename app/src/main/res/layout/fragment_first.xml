@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment_first">
+
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutDescription="@xml/fragment_first_scene">
+
+        <ImageView
+            android:id="@+id/carimg1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@xml/fragment_first_scene"
+            android:src="@drawable/carousel_test" />
+
+        <ImageView
+            android:id="@+id/carimg2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@xml/fragment_first_scene"
+            android:src="@drawable/carousel_test" />
+
+        <ImageView
+            android:id="@+id/carimg3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@xml/fragment_first_scene"
+            android:src="@drawable/carousel_test" />
+
+        <androidx.constraintlayout.helper.widget.Carousel
+            android:id="@+id/carousel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:carousel_backwardTransition="@+id/backward"
+            app:carousel_emptyViewsBehavior="gone"
+            app:carousel_firstView="@+id/carimg2"
+            app:carousel_forwardTransition="@+id/forward"
+            app:carousel_infinite="true"
+            app:carousel_nextState="@+id/next"
+            app:carousel_previousState="@+id/previous"
+            app:constraint_referenced_ids="carimg1, carimg2, carimg3" />
+
+
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+
+</FrameLayout>
