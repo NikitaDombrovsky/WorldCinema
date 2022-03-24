@@ -35,76 +35,90 @@
             android:orientation="vertical"
             android:layout_centerInParent="true"
             >
-            <com.google.android.material.textfield.TextInputEditText
+            <EditText
+                android:id="@+id/Reg_Text_Name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="13dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:background="@drawable/border"
+                android:textSize="12dp"
                 android:hint="@string/txtName"
                 android:textColorHint="@color/gray"
                 app:boxStrokeColor="@color/gray"
                 app:hintTextColor="@color/gray"
                 style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
                 android:ellipsize="end"
-                android:textAppearance="?textAppearanceBody1" />
-            <com.google.android.material.textfield.TextInputEditText
+                android:textAppearance="?textAppearanceBody1"
+                />
+            <EditText
+                android:id="@+id/Reg_Text_SurName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="13dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:background="@drawable/border"
+                android:textSize="12dp"
                 android:hint="@string/txtSurname"
                 android:textColorHint="@color/gray"
                 app:boxStrokeColor="@color/gray"
                 app:hintTextColor="@color/gray"
                 style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
                 android:ellipsize="end"
-                android:textAppearance="?textAppearanceBody1" />
-            <com.google.android.material.textfield.TextInputEditText
+                android:textAppearance="?textAppearanceBody1"
+                />
+            <EditText
+                android:id="@+id/Reg_Text_Email"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="13dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:background="@drawable/border"
+                android:textSize="12dp"
                 android:hint="@string/txtInputEmail"
                 android:textColorHint="@color/gray"
                 app:boxStrokeColor="@color/gray"
                 app:hintTextColor="@color/gray"
                 style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
                 android:ellipsize="end"
-                android:textAppearance="?textAppearanceBody1" />
-            <com.google.android.material.textfield.TextInputEditText
+                android:textAppearance="?textAppearanceBody1"
+                />
+            <EditText
+                android:id="@+id/Reg_Text_Password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="13dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:background="@drawable/border"
+                android:textSize="12dp"
                 android:hint="@string/txtInputPassword"
                 android:textColorHint="@color/gray"
                 app:boxStrokeColor="@color/gray"
                 app:hintTextColor="@color/gray"
                 style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
                 android:ellipsize="end"
-                android:textAppearance="?textAppearanceBody1" />
-            <com.google.android.material.textfield.TextInputEditText
+                android:textAppearance="?textAppearanceBody1"
+                />
+            <EditText
+                android:id="@+id/Reg_Text_ResetPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="13dp"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:background="@drawable/border"
+                android:textSize="12dp"
                 android:hint="@string/txtResetPassword"
                 android:textColorHint="@color/gray"
                 app:boxStrokeColor="@color/gray"
                 app:hintTextColor="@color/gray"
                 style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
                 android:ellipsize="end"
-                android:textAppearance="?textAppearanceBody1" />
+                android:textAppearance="?textAppearanceBody1"/>
         </LinearLayout>
 
 
@@ -115,31 +129,33 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_alignParentBottom="true">
-            <androidx.appcompat.widget.AppCompatButton
+            <Button
+                android:id="@+id/Reg_Button_Reg"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginRight="16dp"
                 android:background="@drawable/border_orange"
-                android:layout_marginTop="13dp"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
                 android:text="@string/txtRegistrartion"
-                android:textColor="@color/white"/>
+                android:textColor="@color/white" />
 
-
-            <androidx.appcompat.widget.AppCompatButton
+            <Button
+                android:id="@+id/Reg_Button_Enter"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColorHint="#9C9090"
-                android:background="@drawable/border"
-                android:layout_marginTop="13dp"
                 android:layout_marginLeft="16dp"
+                android:layout_marginTop="13dp"
                 android:layout_marginRight="16dp"
+                android:background="@drawable/border"
                 android:ellipsize="end"
-                android:textColorHighlight="#9C9090"
-                android:textAppearance="?textAppearanceBody1"
+                android:fontFamily="@font/sf_pro_display_bold"
+                android:text="@string/txtNoRegistration"
                 android:textColor="@color/orange"
-                app:boxStrokeColor="#9C9090"
-                android:text="@string/txtNoRegistration" />
+                android:textColorHighlight="#9C9090"
+                android:textColorHint="#9C9090"
+                app:boxStrokeColor="#9C9090" />
+
         </LinearLayout>
 
 

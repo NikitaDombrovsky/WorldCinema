@@ -2,9 +2,13 @@ package com.example.worldcinema.network.service;
 
 import com.example.worldcinema.network.models.LoginBody;
 import com.example.worldcinema.network.models.LoginResponse;
+import com.example.worldcinema.network.models.Register.RegisterBody;
+import com.example.worldcinema.network.models.Register.RegisterResponse;
+import com.example.worldcinema.network.models.User.UserResponse;
 
 import retrofit2.Call;
 import retrofit2.http.Body;
+import retrofit2.http.GET;
 import retrofit2.http.POST;
 
 /**
@@ -17,6 +21,10 @@ import retrofit2.http.POST;
  * Body классы - классы в которых описано что мы отправляем нам бэк ( к примеру чтобы залогиниться нам надо отправить email и password )
  * */
 public interface ApiService {
-    @POST("login") // тут описываем endpoint - эта та часть строки, которая остается если убрать из нее base url
+    @POST("/auth/login") // тут описываем endpoint - эта та часть строки, которая остается если убрать из нее base url
     Call<LoginResponse> doLogin(@Body LoginBody registerBody);
+    @POST("/auth/register")
+    Call<RegisterResponse> doRegister (@Body RegisterBody registerBody);
+    @GET("/user")
+    Call<UserResponse> getUser();
 }
