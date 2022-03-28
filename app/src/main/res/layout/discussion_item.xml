@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp">
+            <ImageView
+                android:id="@+id/Discussion_Img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/logo_voland" />
+            <LinearLayout
+                android:layout_marginLeft="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/Discussion_Text_Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Игра престолов"
+                    android:fontFamily="@font/sf_pro_display_bold"
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+                <TextView
+                    android:id="@+id/Discussion_Text"
+                    android:fontFamily="@font/sf_pro_display_bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Иван: Смотрели уже последнюю серию? Я просто поверить не могу в..."
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
