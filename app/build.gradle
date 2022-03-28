@@ -29,6 +29,7 @@ android {
 }
 
 dependencies {
+    implementation 'com.squareup.picasso:picasso:2.5.2'
     // Основная либа через которую мы вызываем API запросы
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
 
