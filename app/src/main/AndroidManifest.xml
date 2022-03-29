@@ -30,6 +30,8 @@
         </activity>
         <activity android:name=".DiscussionActivity"
             android:exported="true"/>
+        <activity android:name=".CreateCollection"
+            android:exported="true"/>
 
     </application>
 

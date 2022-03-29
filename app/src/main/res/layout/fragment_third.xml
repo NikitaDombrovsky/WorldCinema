@@ -34,7 +34,17 @@
             android:src="@drawable/add_image">
         </ImageView>
     </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerCollections"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
 
+
+</FrameLayout>
+
+<!--
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -42,4 +52,5 @@
         />
     </LinearLayout>
 
-</FrameLayout>
+
+-->
