@@ -32,24 +32,26 @@
                 android:textSize="20dp"
                 android:text="Создать коллекццию"/>
         </LinearLayout>
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/text_input_title_collection"
-            style="@style/TextInputLayoutStyle"
-            android:textColorHint="#AFAFAF"
-            android:hint="Название"
-            android:layout_marginTop="50dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
 
-            <com.google.android.material.textfield.TextInputEditText
+            <EditText
+                android:textColor="@color/white"
                 android:id="@+id/text_text_title_collection"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
                 android:hint="@string/empty"
-                android:textColor="@color/gray" />
-        </com.google.android.material.textfield.TextInputLayout>
+                android:background="@drawable/border"
+                android:textSize="12dp"
+                android:textColorHint="@color/gray"
+                app:boxStrokeColor="@color/gray"
+                app:hintTextColor="@color/gray"
+                style="@style/Widget.Material3.TextInputEditText.OutlinedBox"
+                android:ellipsize="end"
+                android:textAppearance="?textAppearanceBody1"
+                />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -77,7 +79,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center">
-                <com.google.android.material.button.MaterialButton
+                <Button
                     android:id="@+id/btnChooseIcon"
                     android:layout_width="match_parent"
                     android:textColor="@color/orange"
@@ -90,8 +92,8 @@
                     android:text="Выбрать иконку"
                     android:layout_height="60dp"
                     android:layout_gravity="center"
-                    android:textAllCaps="false"
-                    />
+                    android:textAllCaps="false" />
+
             </LinearLayout>
         </LinearLayout>
         <LinearLayout

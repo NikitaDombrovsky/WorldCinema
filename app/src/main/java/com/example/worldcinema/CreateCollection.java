@@ -11,7 +11,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.button.MaterialButton;
 
 public class CreateCollection extends AppCompatActivity {
-    private MaterialButton btnChooseIcon;
+   // private MaterialButton btnChooseIcon;
+    private Button btnChooseIcon;
     private Bundle bundle;
     private ImageView iconChoose;
     private Button btnSaveCollection;
