@@ -37,7 +37,7 @@ public class CreateCollection extends AppCompatActivity {
         btnChooseIcon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               // startActivity(new Intent(CreateCollection.this, ChooseIconActivity.class));
+                startActivity(new Intent(CreateCollection.this, ChooseIconActivity.class));
             }
         });
     }
