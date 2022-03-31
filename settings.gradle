@@ -8,3 +8,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "WorldCinema"
 include ':app'
+include ':app:worldcinemawear'

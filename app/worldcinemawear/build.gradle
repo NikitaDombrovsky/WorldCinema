@@ -1,0 +1,43 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdk 32
+
+    defaultConfig {
+        applicationId "com.example.worldcinemawear"
+        minSdk 30
+        targetSdk 32
+        versionCode 1
+        versionName "1.0"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    // Основная либа через которую мы вызываем API запросы
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+
+    // Эта либа берет на себя парсинг json, который приходит с бэка в java-классы для дальнейшего использования
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+
+    // Эта штука нужна чтобы мы видели в логах инфу о запросе
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.8.0'
+    implementation 'com.google.android.gms:play-services-wearable:17.1.0'
+    implementation 'androidx.percentlayout:percentlayout:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.1'
+    implementation 'androidx.wear:wear:1.1.0'
+}
