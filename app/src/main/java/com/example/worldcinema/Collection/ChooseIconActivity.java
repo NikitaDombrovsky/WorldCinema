@@ -1,6 +1,5 @@
-package com.example.worldcinema;
+package com.example.worldcinema.Collection;
 
-import android.graphics.drawable.Icon;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.GridView;
@@ -8,6 +7,7 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.worldcinema.R;
 import com.example.worldcinema.network.adapter.IconAdapter;
 
 import java.util.ArrayList;
@@ -24,12 +24,7 @@ public class ChooseIconActivity extends AppCompatActivity {
         setContentView(R.layout.activity_choose_icon);
         gridIcons = findViewById(R.id.gridIcons);
         imageView = findViewById(R.id.goBackFromChooseIcons);
-        imageView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                finish();
-            }
-        });
+        imageView.setOnClickListener(view -> finish());
         iconAdapter = new IconAdapter(this, R.layout.icon_item, iconList);
         setIconList();
         gridIcons.setAdapter(iconAdapter);

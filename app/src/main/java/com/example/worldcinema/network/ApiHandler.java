@@ -10,15 +10,12 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class ApiHandler {
     private static ApiHandler mInstance;
 
-   // private static final String BASE_URL = "https://reqres.in/api/"; // не забудь
     private static final String BASE_URL = "http://cinema.areas.su/";
-    // private static final String BASE_URL = "http://cinema.areas.su/auth/";
 
     private Retrofit retrofit;
 
     public ApiHandler() {
         // Здесь мы описываем насколько много информации о выполнении запросы мы хотим видеть в логах
-        // По сути тут ничего даже понимать не надо ctrl + c , ctrl + v
         HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
         interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
 

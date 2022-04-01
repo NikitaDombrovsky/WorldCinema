@@ -21,23 +21,13 @@ import java.util.ArrayList;
 
 public class MainActivity extends Activity {
 
-//    private ArrayList<MovieResponse> movieResponses;
-//    private RecyclerView recyclerView;
-//    private LinearLayoutManager linearLayoutManager;
-//    private MovieAdapter movieAdapter;
-//    ApiService service = ApiHandler.getInstance().getService(); ////##################
     private LinearLayout wear_button;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         wear_button = findViewById(R.id.wear_button);
-        wear_button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), CompilationActivity.class));
-            }
-        });
+        wear_button.setOnClickListener(view -> startActivity(new Intent(getApplicationContext(), CompilationActivity.class)));
 
     }
 }

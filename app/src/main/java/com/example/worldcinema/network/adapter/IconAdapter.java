@@ -8,13 +8,12 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import com.example.worldcinema.CreateCollection;
-import com.example.worldcinema.IconItem;
+import com.example.worldcinema.Collection.CreateCollection;
+import com.example.worldcinema.Collection.IconItem;
 import com.example.worldcinema.R;
 
 import java.util.ArrayList;

@@ -10,29 +10,29 @@
         android:usesCleartextTraffic="true"
         android:theme="@style/Theme.WorldCinema">
         <activity
-            android:name=".MainActivity"
+            android:name=".Main.MainActivity"
             android:exported="true">
         </activity>
-        <activity android:name=".AuthorizationScreen"
-            android:exported="true">
-
-        </activity>
-        <activity android:name=".RegistrationScreen"
+        <activity android:name=".Login.AuthorizationScreen"
             android:exported="true">
 
         </activity>
-        <activity android:name=".LaunchScreen"
+        <activity android:name=".Login.RegistrationScreen"
+            android:exported="true">
+
+        </activity>
+        <activity android:name=".Main.LaunchScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".DiscussionActivity"
+        <activity android:name=".Chat.DiscussionActivity"
             android:exported="true"/>
-        <activity android:name=".CreateCollection"
+        <activity android:name=".Collection.CreateCollection"
             android:exported="true"/>
-        <activity android:name=".ChooseIconActivity"
+        <activity android:name=".Collection.ChooseIconActivity"
             android:exported="true"/>
 
     </application>

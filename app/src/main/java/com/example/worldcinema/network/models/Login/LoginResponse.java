@@ -1,7 +1,8 @@
-package com.example.worldcinema.network.models;
+package com.example.worldcinema.network.models.Login;
 
 import com.google.gson.annotations.SerializedName;
 
+// Описывает что нам приходит с бека сервера
 public class LoginResponse {
     @SerializedName("token")
     private String token;

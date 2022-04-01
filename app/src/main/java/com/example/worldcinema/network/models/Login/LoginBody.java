@@ -1,5 +1,6 @@
-package com.example.worldcinema.network.models;
+package com.example.worldcinema.network.models.Login;
 
+// Описывает что мы отправяем на сервер
 import com.google.gson.annotations.SerializedName;
 public class LoginBody {
     @SerializedName("email")

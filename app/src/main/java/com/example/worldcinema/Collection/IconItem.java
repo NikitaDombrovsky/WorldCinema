@@ -1,10 +1,8 @@
-package com.example.worldcinema;
+package com.example.worldcinema.Collection;
 
-import android.graphics.drawable.Icon;
 
 public class IconItem {
     private int icon_id;
-
     public IconItem(int icon_id){
         this.icon_id = icon_id;
     }

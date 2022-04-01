@@ -1,4 +1,4 @@
-package com.example.worldcinema;
+package com.example.worldcinema.Chat;
 
 import static android.content.ContentValues.TAG;
 import static java.security.AccessController.getContext;
@@ -17,6 +17,7 @@ import androidx.navigation.ui.NavigationUI;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.worldcinema.R;
 import com.example.worldcinema.network.ApiHandler;
 import com.example.worldcinema.network.ErrorUtils;
 import com.example.worldcinema.network.adapter.ChatAdapter;
@@ -34,6 +35,7 @@ import retrofit2.Response;
 
 public class DiscussionActivity extends AppCompatActivity {
 
+    // НЕ РАБОТАЕТ!
     private ArrayList<ChatResponse> chatResponses;
     private RecyclerView recyclerView;
     private LinearLayoutManager linearLayoutManager;

@@ -1,4 +1,4 @@
-package com.example.worldcinema;
+package com.example.worldcinema.Collection;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,10 +8,10 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.google.android.material.button.MaterialButton;
+import com.example.worldcinema.Main.MainActivity;
+import com.example.worldcinema.R;
 
 public class CreateCollection extends AppCompatActivity {
-   // private MaterialButton btnChooseIcon;
     private Button btnChooseIcon;
     private Bundle bundle;
     private ImageView iconChoose;
@@ -24,22 +24,13 @@ public class CreateCollection extends AppCompatActivity {
         btnChooseIcon = findViewById(R.id.btnChooseIcon);
         iconChoose = findViewById(R.id.iconChoose);
         btnSaveCollection = findViewById(R.id.btnSaveCollection);
-        btnSaveCollection.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(CreateCollection.this, MainActivity.class));
-            }
-        });
+        // Открытие меню и передача картинки (В теории работает)
+        btnSaveCollection.setOnClickListener(view -> startActivity(new Intent(CreateCollection.this, MainActivity.class)));
         bundle = getIntent().getExtras();
         if (bundle != null){
             iconChoose.setImageResource(bundle.getInt("icon"));
         }
-        btnChooseIcon.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(CreateCollection.this, ChooseIconActivity.class));
-            }
-        });
+        btnChooseIcon.setOnClickListener(view -> startActivity(new Intent(CreateCollection.this, ChooseIconActivity.class)));
     }
 
     private void goBack(View view){
