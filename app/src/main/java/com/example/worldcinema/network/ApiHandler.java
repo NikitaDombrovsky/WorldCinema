@@ -12,6 +12,7 @@ public class ApiHandler {
 
    // private static final String BASE_URL = "https://reqres.in/api/"; // не забудь
     private static final String BASE_URL = "http://cinema.areas.su/";
+    // private static final String BASE_URL = "http://cinema.areas.su/auth/";
 
     private Retrofit retrofit;
 

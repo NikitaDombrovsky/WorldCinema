@@ -2,13 +2,20 @@ package com.example.worldcinema.network.service;
 
 import com.example.worldcinema.network.models.LoginBody;
 import com.example.worldcinema.network.models.LoginResponse;
+import com.example.worldcinema.network.models.MovieData.MovieCoverResponse;
+import com.example.worldcinema.network.models.MovieData.MovieResponse;
+import com.example.worldcinema.network.models.Profile.ProfileResponse;
 import com.example.worldcinema.network.models.Register.RegisterBody;
 import com.example.worldcinema.network.models.Register.RegisterResponse;
+import com.example.worldcinema.network.models.User.UserBody;
 import com.example.worldcinema.network.models.User.UserResponse;
+
+import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.GET;
+import retrofit2.http.Header;
 import retrofit2.http.POST;
 
 /**
@@ -25,6 +32,14 @@ public interface ApiService {
     Call<LoginResponse> doLogin(@Body LoginBody registerBody);
     @POST("/auth/register")
     Call<RegisterResponse> doRegister (@Body RegisterBody registerBody);
-    @GET("/user")
-    Call<UserResponse> getUser();
+    @GET("cover")
+    Call<MovieCoverResponse> getCovers();
+    @GET("movies?filter=inTrend")
+    Call<List<MovieResponse>> getMovies();
+    @GET("user")
+    Call<List<ProfileResponse>> getData(@Header("Authorization") String token);
+//    @GET("/user")
+//    Call<UserResponse> getUser();
+//    @GET("/user")
+//    Call<UserResponse> getUser (@Body UserBody userBody);
 }

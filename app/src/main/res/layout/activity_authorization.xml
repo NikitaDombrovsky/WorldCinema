@@ -36,6 +36,7 @@
         android:layout_centerInParent="true"
         >
         <EditText
+            android:textColor="@color/white"
             android:id="@+id/Aut_Test_Email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -53,6 +54,7 @@
             android:textAppearance="?textAppearanceBody1"
             />
         <EditText
+            android:textColor="@color/white"
             android:id="@+id/Aut_Test_Password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
